@@ -8,7 +8,7 @@ function bouncingBall(h,  bounce,  window) {
     function recursiveBounce(height, lessHeight, targetHeight){
       //ball drops past window, +1
       counter++
-      //if the bounce goes above or meets the window, +1 and call the bounce again
+      //if the bounce goes above the window, +1 and call the bounce again
       if((height * lessHeight) > targetHeight){
         //ball goes back up, +1
         counter++
