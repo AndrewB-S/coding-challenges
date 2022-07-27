@@ -25,6 +25,6 @@ function countSmileys(arr) {
           }
         }
       }
-    //time/space --- 1 for loop, up to 3 nested if statements
+    //time/space --- 1 for loop, up to 3 nested if statements.. pointing at specific indices
     return counter
   }
