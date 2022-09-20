@@ -1,4 +1,6 @@
 // create a credit card mask to replace everything in front of the last 4 digits with #s
+
+/* version 1, not using regex
 function maskify(cc) {
   
     if(cc.split('').length <= 4){
@@ -15,4 +17,11 @@ function maskify(cc) {
     
     return mask += end
   }
-  
+  */
+
+
+  //regex version.... 
+
+  function maskify(){
+    return cc.slice(0, -4).replace(/./g, '#') + cc.slice(-4)
+  }
